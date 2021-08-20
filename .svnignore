@@ -1,0 +1,10 @@
+.*
+*.md
+*.log
+src
+test
+rollup.config.js
+package.json
+package-lock.json
+circle.yml
+node_modules
