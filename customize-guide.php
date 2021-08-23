@@ -74,6 +74,14 @@ class WPCOM_Customize_Guide {
 		wp_enqueue_script( 'customize-guide', plugins_url( 'js/customize-guide.js', __FILE__ ), array( 'customize-controls' ), '20210820', true );
 		wp_enqueue_style( 'customize-guide', plugins_url( 'css/customize-guide.css', __FILE__ ) );
 
+		$steps = array(
+			array(
+				'content' => __( 'Here you can control the design of your site. Change your site title, update the colors and fonts, and even add a header image. Explore widgets to find new features and content to add to your website.' ),
+				'smallContent' => __( 'Click the <strong>Preview</strong> icon to preview your site appearance before saving.' ),
+				'button' => __( 'Thanks, got it!' )
+			),
+		);
+
 		$steps = apply_filters( 'customize_guide_steps', $steps );
 
 		$showGuide = $this->should_show_guide();
